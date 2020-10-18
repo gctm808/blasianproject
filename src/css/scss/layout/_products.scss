@@ -1,0 +1,105 @@
+.productBoxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productBox {
+    padding: 2rem;
+    background-color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-responsive iframe{
+    height:90%;
+    width:80%;
+    position:absolute;
+}
+
+.disabilityGraphics {
+    img {
+        width: 50%;
+    }
+}
+
+.disabilityVideo {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.productLinks {
+    text-align: center;
+}
+
+.annuityList {
+    display: flex;
+    padding: 50px 0;
+
+    .left {
+        flex: 30%;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        flex: 70%;
+    }
+}
+
+.fa-check {
+    padding-right: 5px;
+    color: $color-brand-primary;
+}
+
+.lifeList {
+    display: flex;
+    padding: 20px 0;
+
+    .left {
+        flex: 30%;
+        padding-left: 30px;
+    }
+
+    .right {
+        flex: 70%;
+        padding-left: 60px;
+    }
+}
+
+.calculators {
+    display: flex;
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 740px;
+
+    iframe {
+        width:50%;
+        margin: 15px 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.ltcGraphics {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.ltcVideo {
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #FIELDS
+\*------------------------------------*/
+
+.c-field {
+	margin-bottom: 1rem;
+}
+
+.c-field__note {
+	font-size: $font-size-small;
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.c-field input {
+	box-shadow: 1px 1px 4px $color-gray-4;
+}
+
+textarea {
+	box-shadow: 1px 1px 4px $color-gray-4;
+}

@@ -1,0 +1,118 @@
+.sg-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sg-colors li {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    padding: 0.3em;
+    margin: 0 0.5em 0.5em 0;
+    min-width: 5em;
+    max-width: 14em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.sg-color-fill {
+    display: block;
+    height: 4em;
+    margin-bottom: 0.3em;
+    border-radius: 5px;
+}
+
+.sg-primary {
+    background-color: $color-brand-primary;
+}
+
+.sg-primary-dark {
+    background-color: $color-brand-primary-dark;
+}
+
+.sg-secondary {
+    background-color: $color-brand-secondary;
+}
+
+.sg-secondary-dark {
+    background-color: $color-brand-secondary-dark;
+}
+
+.sg-white {
+    background-color: #ffffff;
+}
+
+.sg-gray-1 {
+    background-color: #f7f9f9;
+}
+
+.sg-gray-2 {
+    background-color: #d9d9d9;
+}
+
+.sg-gray-3 {
+    background-color: #a5a5a5;
+}
+
+.sg-gray-4 {
+    background-color: #808080;
+}
+
+.sg-gray-5 {
+    background-color: #595959;
+}
+
+.sg-gray-6 {
+    background-color: #444444;
+}
+
+.sg-gray-7 {
+    background-color: #222222;
+}
+
+.sg-black {
+    background-color: #000000;
+}
+
+.sg-util-positive {
+    background-color: #03804d;
+}
+
+.sg-util-positive-subtle {
+    background-color: #d4f3e6;
+}
+
+.sg-util-caution {
+    background-color: #a59b15;
+}
+
+.sg-util-caution-subtle {
+    background-color: #fffecf;
+}
+
+.sg-util-negative {
+    background-color: #b12a0b;
+}
+
+.sg-util-negative-subtle {
+    background-color: #fdded8;
+}
+
+.sg-util-neutral {
+    background-color: #0192d0;
+}
+
+.sg-util-neutral-subtle {
+    background-color: #d3f2ff;
+}
+
+.sg-label {
+    font-size: 90%;
+    line-height: 1;
+}

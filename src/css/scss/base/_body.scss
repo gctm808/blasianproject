@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ */
+body {
+	background-color: #FFFFFF;
+	color: $color-text-blue;
+	font: 100%/1.5 $font;
+	font-size: $font-size-med-2;
+	-webkit-text-size-adjust: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}

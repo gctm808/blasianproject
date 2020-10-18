@@ -1,0 +1,125 @@
+/*------------------------------------*\
+    #LANDING PAGE
+\*------------------------------------*/
+
+.landing {
+    min-height: 92vh;
+
+    .divider {
+        display: flex;
+    }
+}
+
+
+.headers {
+    flex: 70%;
+    padding: 60px;
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        padding-bottom: 50px;
+    }
+}
+
+
+.descriptionSection {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+    }
+} 
+
+.aboutContainer {
+    min-height: 60vh;
+    background-color: #f3f5f5;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        padding: 70px 0 20px;
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+
+    .gohBold {
+        font-weight: bold;
+    }
+
+    img {
+        max-width: 65%;
+    }
+}
+
+
+.productsContainer {
+    min-height: 100vh;
+    padding-top: 30px;
+    text-align: center;
+
+    h2 {
+        padding: 30px 0;
+    }
+    
+    Button {
+        margin: 1.5rem 0;
+    }
+}
+
+.productsPlusArrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-figure {
+    display: none;
+}
+
+.c-figure__media {
+    img {
+        max-width: 650px;
+    }
+}
+
+.c-figure__caption {
+    max-width: 700px;
+    text-align: center;
+
+    .captionTitle {
+        font-weight: bold;
+        font-style: normal !important;
+        text-transform: uppercase;
+    }
+}
+
+.activeItem {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productNav {
+    padding-bottom: 150px;
+
+    &:hover {
+        color: $color-gray-4;
+        cursor: pointer;
+    }
+
+    
+}

@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+
+/**
+ * Fade Animation
+ */
+.animate-fade {
+	@include transition(opacity, 0.3s, ease-out);
+
+	&:hover {
+		opacity: 0;
+	}
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-500%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(1000%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.transitionTop {
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+}
+
+.transitionLeft {
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+}
+
+.transitionBottom {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+}
