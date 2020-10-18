@@ -18,7 +18,6 @@ import {Route} from 'react-router-dom';
 const Landing = () => {
     return (
         <div>
-            <Alert link={'/covid'} text={'Update from us regarding COVID-19 >'}/>
             <Header />
             {/*Content Div*/}
                 <Route exact path='/' component={Home} />
