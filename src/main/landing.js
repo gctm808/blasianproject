@@ -13,7 +13,6 @@ import Life from './products/life';
 import Ltc from './products/ltc';
 import Linked from './products/linked';
 import Alert from '../components/molecules/alert';
-import Covid from './covid';
 import {Route} from 'react-router-dom';
 
 const Landing = () => {
@@ -22,7 +21,6 @@ const Landing = () => {
             <Alert link={'/covid'} text={'Update from us regarding COVID-19 >'}/>
             <Header />
             {/*Content Div*/}
-                <Route exact path='/covid' component={Covid} />
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/products' component={Products} />
