@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <footer className="c-footer" role="contentinfo">
             <div className="l">
-                <LogoLink img='whiteLogo.png' link='#' />
+                <LogoLink img='whiteLogoResized.png' link='#' />
                 <FooterNav />
-                <p className="copyright">&copy; 2019 gmooreDev All rights reserved.</p>
+                <p className="copyright">&copy; 2020 gmooreDev All rights reserved.</p>
             </div>
         </footer>
     );

@@ -4,15 +4,18 @@ import ToutBlock from '../molecules/toutBlock';
 
 const ToutList = () => {
     return (
-        <ul className="c-tout-list g g-3up">
+        <ul className="c-tout-list g g-4up">
             <li className="c-tout-list__item gi">
-                <ToutBlock img='fpo_landscape.png' link='#' headline='Lorem ipsum dolor sit amet, consectetur adipisicing elit,(37 characters)' />
+                <ToutBlock img='film.jpg' link='#' headline='Film' />
             </li>
             <li className="c-tout-list__item gi">
-                <ToutBlock img='fpo_landscape.png' link='#' headline='Lorem ipsum dolor sit amet, consectetur adipisicing elit,(37 characters)' />
+                <ToutBlock img='magazine.jpg' link='#' headline='Magazine' />
             </li>
             <li className="c-tout-list__item gi">
-                <ToutBlock img='fpo_landscape.png' link='#' headline='Lorem ipsum dolor sit amet, consectetur adipisicing elit,(37 characters)' />
+                <ToutBlock img='podcast.jpg' link='#' headline='Podcast' />
+            </li>
+            <li className="c-tout-list__item gi">
+                <ToutBlock img='blog.jpg' link='#' headline='Blog' />
             </li>
         </ul>
     );

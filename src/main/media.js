@@ -1,10 +1,11 @@
 import React from 'react';
 import '../css/styles.css';
+import '../components/molecules/productBox';
+import Button from '../components/molecules/button';
 import LogoLink from '../components/molecules/logoLink';
 import Nav from '../components/molecules/nav';
-import Button from '../components/molecules/button';
 
-const About = () => {
+const Media = () => {
     return (
         <div>
             <header className="c-header" role="banner">
@@ -16,10 +17,10 @@ const About = () => {
                 </div>
             </header>
             <div className='l extraPadding'>
-                <h2>About</h2>
+                <h2>Media</h2>
             </div>
         </div>
     );
 };
 
-export default About;
+export default Media;

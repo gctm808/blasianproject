@@ -8,9 +8,9 @@ const FooterNav = () => {
         <nav className="c-footer-nav">
             <ul className="c-footer-nav__list">
                 <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/about'>About</NavLink></li>
-                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/products'>Products</NavLink></li>
-                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/contact'>Contact</NavLink></li>
-                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/agents'>Agents</NavLink></li>
+                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/products'>Media</NavLink></li>
+                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/contact'>Community</NavLink></li>
+                <li className="c-footer-nav__item c-footer-nav__link"><NavLink exact to='/agents'>Contact</NavLink></li>
             </ul>
         </nav>
     );

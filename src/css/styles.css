@@ -502,13 +502,13 @@ h3 {
  * Links
  */
 a {
-  color: #808080;
+  color: #fff;
   text-decoration: none;
   outline: 0;
   transition: all 0.2s ease;
 }
 a:hover, a:focus {
-  color: #444444;
+  color: #ffd27b;
 }
 
 /*------------------------------------*\
@@ -743,7 +743,7 @@ abbr {
 }
 .c-block-hero:hover .c-block-hero__headline, .c-block-hero:focus .c-block-hero__headline {
   background: #444444;
-  color: darkseagreen;
+  color: #ffd27b;
 }
 
 /*------------------------------------*\
@@ -759,7 +759,7 @@ abbr {
   transition: all 0.2s ease;
 }
 .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-  color: darkseagreen;
+  color: #ffd27b;
 }
 .c-block-media--small {
   font-size: 0.875rem;
@@ -771,8 +771,6 @@ abbr {
  */
 .c-block-media__media {
   width: 20%;
-  max-width: 11em;
-  margin-right: 1rem;
 }
 .c-block-media--small .c-block-media__media {
   max-width: 3.5em;
@@ -781,7 +779,6 @@ abbr {
 @media all and (min-width: 46.8em) {
   .c-block-media__media {
     width: 50%;
-    margin-right: 1.5rem;
   }
 }
 
@@ -826,6 +823,7 @@ abbr {
   position: relative;
   overflow: hidden;
   border-radius: 6px;
+  box-shadow: 1px 1px 4px #808080;
 }
 
 /**
@@ -833,6 +831,7 @@ abbr {
  */
 .c-block-tout__img {
   display: block;
+  max-height: 60vh;
 }
 
 /**
@@ -842,16 +841,17 @@ abbr {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  width: 50%;
+  background: #fff;
+  color: #050c39;
   padding: 0.5em;
   font-size: 1.4rem;
   transition: all 0.2s ease;
+  border-radius: 5%;
 }
 .c-block-tout:hover .c-block-tout__headline, .c-block-tout:focus .c-block-tout__headline {
   padding-bottom: 2rem;
-  color: darkseagreen;
+  color: #ffd27b;
 }
 
 /*------------------------------------*\
@@ -936,14 +936,14 @@ abbr {
   text-align: center;
   transition: background 0.2s ease;
   box-shadow: 1px 1px 4px #808080;
-  background: darkseagreen;
+  background: #e65a19;
   color: #f7f9f9;
   /**
    * Disabled button
    */
 }
 .c-btn:hover, .c-btn:focus {
-  background: #4c5f29;
+  background: #e65a19;
   color: #fff;
 }
 .c-btn.disabled {
@@ -990,7 +990,7 @@ abbr {
   transition: all 0.2s ease;
 }
 .c-text-btn:hover, .c-text-btn:focus {
-  color: darkseagreen;
+  color: #ffd27b;
 }
 .c-text-btn:hover:after, .c-text-btn:focus:after {
   right: -28px;
@@ -1006,7 +1006,7 @@ abbr {
   background: #a5a5a5;
 }
 .c-btn--overlay:hover, .c-btn--overlay:focus {
-  background-color: darkseagreen !important;
+  background-color: #ffd27b !important;
 }
 
 /*------------------------------------*\
@@ -1072,7 +1072,7 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #4c5f29;
+  background: black;
   color: #fff;
   line-height: 1.2;
   padding: 1em 0;
@@ -1217,13 +1217,12 @@ textarea {
  */
 .c-header {
   position: sticky;
-  z-index: 1;
   top: 0;
   display: flex;
   align-items: center;
-  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
-  padding: 0.5em 0;
-  background-color: #fff;
+}
+.c-header img {
+  padding-left: 5%;
 }
 
 /**
@@ -1231,10 +1230,15 @@ textarea {
  * 1) This container holds the primary nav and search menu
  */
 .c-header__controls {
-  margin-left: auto;
+  margin-left: 15%;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
   padding-right: 1rem;
+}
+.c-header__controls Button {
+  position: absolute;
+  right: 0;
+  margin-right: 3%;
 }
 
 /**
@@ -1572,8 +1576,9 @@ textarea {
 /**
  * Media List
  */
-.c-media-list__item {
-  margin-bottom: 1.5em;
+.c-media-list {
+  display: flex;
+  flex-direction: row;
 }
 
 /**
@@ -1746,6 +1751,7 @@ textarea {
  */
 .c-primary-nav__list {
   display: none;
+  text-align: center;
 }
 @media all and (min-width: 46.8em) {
   .c-primary-nav__list {
@@ -1804,7 +1810,7 @@ textarea {
   width: 3rem;
   height: 0.5rem;
   bottom: 0;
-  background: darkseagreen;
+  background: #ffd27b;
 }
 
 /*------------------------------------*\
@@ -2273,7 +2279,8 @@ progress[value]::-webkit-progress-bar {
     #LANDING PAGE
 \*------------------------------------*/
 .landing {
-  min-height: 92vh;
+  min-height: 100vh;
+  color: #fff;
 }
 .landing .divider {
   display: flex;
@@ -2282,6 +2289,8 @@ progress[value]::-webkit-progress-bar {
 .headers {
   flex: 70%;
   padding: 60px;
+  padding-left: 15%;
+  padding-top: 10%;
 }
 .headers h1 {
   padding-bottom: 30px;
@@ -2293,15 +2302,16 @@ progress[value]::-webkit-progress-bar {
 .descriptionSection {
   min-height: 50vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding-top: 5%;
+  justify-content: space-evenly;
+  background-color: #ffd27b;
 }
 .descriptionSection h2 {
   padding-bottom: 20px;
 }
 .descriptionSection p {
-  text-align: center;
+  text-align: left;
 }
 
 .aboutContainer {
@@ -2439,7 +2449,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 h2 {
-  padding: 0 0 20px !important;
+  padding: 5px 0 5px !important;
 }
 
 .splitContainer {
@@ -2529,7 +2539,7 @@ h2 {
 
 .fa-check {
   padding-right: 5px;
-  color: darkseagreen;
+  color: #ffd27b;
 }
 
 .lifeList {
@@ -2606,11 +2616,11 @@ h2 {
 }
 
 .sg-primary {
-  background-color: darkseagreen;
+  background-color: #ffd27b;
 }
 
 .sg-primary-dark {
-  background-color: #4c5f29;
+  background-color: #e65a19;
 }
 
 .sg-secondary {

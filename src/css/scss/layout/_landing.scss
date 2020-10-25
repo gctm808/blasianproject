@@ -3,17 +3,22 @@
 \*------------------------------------*/
 
 .landing {
-    min-height: 92vh;
+    min-height: 100vh;
+    color: $color-text-white;
 
     .divider {
         display: flex;
     }
+
 }
 
 
 .headers {
     flex: 70%;
     padding: 60px;
+    
+    padding-left: 15%;
+    padding-top: 10%;
 
     h1 {
         padding-bottom: 30px;
@@ -28,16 +33,17 @@
 .descriptionSection {
     min-height: 50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding-top: 5%;
+    justify-content: space-evenly;
+    background-color: $color-brand-primary;
 
     h2 {
         padding-bottom: 20px;
     }
 
     p {
-        text-align: center;
+        text-align: left;
     }
 } 
 

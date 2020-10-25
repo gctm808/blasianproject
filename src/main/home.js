@@ -1,9 +1,11 @@
 import React from 'react';
+import LogoLink from '../components/molecules/logoLink';
+import Nav from '../components/molecules/nav';
 import Button from '../components/molecules/button';
-import landing from '../images/landing.jpg';
-import Description from './landing/description';
+import landing from '../images/landing2.jpg';
 import About from './landing/about';
-import Products from './landing/products';
+import Community from './landing/community';
+import Media from './landing/media';
 import '../css/styles.css';
 
 const Home = () => {
@@ -14,17 +16,26 @@ const Home = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}} className='landing'>
+                <header className="c-header" role="banner">
+                    <LogoLink img='whiteLogoResized.png' link=' ' />
+                    <div className="c-header__controls">
+                        <a id='navLink' href="/home" className="nav-toggle nav-toggle-menu icon-menu"><span className="is-vishidden">Menu</span></a>
+                        <Nav />
+                        <a href='www.google.com' target='_blank' rel='noopener noreferrer'><Button name='Get Involved'/></a>
+                    </div>
+                </header>
                 <div className='l divider'>
                     <div className='headers'>
-                        <h1 className='transitionTop'>YOUR CLIENTS COME FIRST</h1>
-                        <h2 className='transitionLeft' style={{lineHeight: "1.5"}}>Guardian of Hawaii. <span style={{fontWeight: "lighter"}}>Helping you protect <br />what matters most to your clients.</span></h2>
-                        <div className='transitionBottom'><a href='https://lifepipe.ipipeline.com/LTSearch.aspx?r=1490547670704388677&GAID=5229' target='_blank' rel='noopener noreferrer'><Button name='RUN MY QUOTE'/></a></div>
+                        <h1 className='transitionTop'>INSPIRE.</h1>
+                        <h1 className='transitionTop'>EMPOWER.</h1>
+                        <h1 className='transitionTop'>RESTORE.</h1>
+                        <div className='transitionBottom'><a href='www.google.com' target='_blank' rel='noopener noreferrer'><Button name='SEE OUR LATEST POST'/></a></div>
                     </div>
                 </div>
             </div>
-            <Description />
             <About />
-            <Products />
+            <Media />
+            <Community />
         </div>
     );
 };
