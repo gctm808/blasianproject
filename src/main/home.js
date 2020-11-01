@@ -2,7 +2,7 @@ import React from 'react';
 import LogoLink from '../components/molecules/logoLink';
 import Nav from '../components/molecules/nav';
 import Button from '../components/molecules/button';
-import landing from '../images/landing2.jpg';
+import landing from '../images/landing.jpg';
 import About from './landing/about';
 import Community from './landing/community';
 import Media from './landing/media';
