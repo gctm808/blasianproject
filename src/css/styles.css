@@ -1727,7 +1727,7 @@ textarea {
  * Navigation tag
  */
 .c-primary-nav {
-  display: none;
+  margin: 0 5rem;
   padding-right: 20px;
 }
 .c-primary-nav--is-active {
