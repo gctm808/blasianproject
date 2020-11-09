@@ -2038,7 +2038,7 @@ progress[value]::-webkit-progress-bar {
  * Layout container
  */
 .l {
-  max-width: 80em;
+  margin: 0 auto;
   padding: 1rem;
 }
 
