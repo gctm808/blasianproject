@@ -188,6 +188,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  letter-spacing: 0.1em;
 }
 
 /*------------------------------------*\
@@ -658,6 +659,7 @@ td {
  */
 p {
   margin-bottom: 1em;
+  letter-spacing: 0.1em;
 }
 
 /**
@@ -943,8 +945,7 @@ abbr {
    */
 }
 .c-btn:hover, .c-btn:focus {
-  background: #e65a19;
-  color: #fff;
+  background: #ffd27b;
 }
 .c-btn.disabled {
   background: #d9d9d9;
@@ -1216,10 +1217,13 @@ textarea {
  * Header
  */
 .c-header {
+  background-color: white;
   position: sticky;
   top: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .c-header img {
   padding-left: 5%;
@@ -1230,17 +1234,10 @@ textarea {
  * 1) This container holds the primary nav and search menu
  */
 .c-header__controls {
-  margin-left: 15%;
   display: flex;
   justify-content: space-evenly;
-  padding-right: 1rem;
+  padding-left: 50px;
 }
-.c-header__controls Button {
-  position: absolute;
-  right: 0;
-  margin-right: 3%;
-}
-
 /**
  * Nav toggle button
  * 1) Styles for the general nav toggle button
@@ -1614,6 +1611,13 @@ textarea {
   }
 }
 
+/**
+ * Tout List
+ */
+.c-tout-list {
+  margin: 0 10vw !important;
+}
+
 /*------------------------------------*\
     #MESSAGING
 \*------------------------------------*/
@@ -1728,6 +1732,7 @@ textarea {
  */
 .c-primary-nav {
   display: none;
+  padding-right: 20px;
 }
 .c-primary-nav--is-active {
   display: block;
@@ -1749,10 +1754,6 @@ textarea {
 /**
  * Nav List
  */
-.c-primary-nav__list {
-  display: none;
-  text-align: center;
-}
 @media all and (min-width: 46.8em) {
   .c-primary-nav__list {
     display: flex;
@@ -1767,10 +1768,18 @@ textarea {
  */
 .c-primary-nav__link {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bolder;
   display: block;
   padding: 1rem;
   text-transform: uppercase;
+}
+.c-primary-nav__link a {
+  color: #050c39;
+  letter-spacing: 0.1em;
+}
+
+.c-primary-nav__link:hover {
+  border-bottom: 2px solid #ffd27b;
 }
 
 /**
@@ -2294,6 +2303,7 @@ progress[value]::-webkit-progress-bar {
 }
 .headers h1 {
   padding-bottom: 30px;
+  letter-spacing: 0.1em;
 }
 .headers h2 {
   padding-bottom: 50px;
@@ -2338,18 +2348,6 @@ progress[value]::-webkit-progress-bar {
   min-height: 100vh;
   padding-top: 30px;
   text-align: center;
-}
-.productsContainer h2 {
-  padding: 30px 0;
-}
-.productsContainer Button {
-  margin: 1.5rem 0;
-}
-
-.productsPlusArrows {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .c-figure {

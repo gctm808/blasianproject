@@ -9,9 +9,7 @@ class Products extends Component {
             <div className='l productsContainer'>
                 <h2>MEDIA</h2>
                 <h3>Description of Different Types of Media</h3><br /><br />
-                <div>
-                    <ToutList />
-                </div>
+                <ToutList />
             </div>
         )
     }

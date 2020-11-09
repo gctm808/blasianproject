@@ -6,10 +6,13 @@
  * Header
  */
 .c-header {
+	background-color: white;
 	position: sticky;
 	top: 0;
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	z-index: 2;
 	
 	img {
 		padding-left: 5%;
@@ -21,15 +24,11 @@
  * 1) This container holds the primary nav and search menu
  */
 .c-header__controls {
-	margin-left: 15%;
 	display: flex;
 	justify-content: space-evenly;
-	padding-right: 1rem;
+	padding-left: 50px;
 
 	Button {
-		position: absolute;
-		right: 0;
-		margin-right: 3%;
 	}
 }
 
