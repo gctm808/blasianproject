@@ -1225,9 +1225,6 @@ textarea {
   align-items: center;
   z-index: 2;
 }
-.c-header img {
-  padding-left: 5%;
-}
 
 /**
  * Header Controls
@@ -1236,7 +1233,6 @@ textarea {
 .c-header__controls {
   display: flex;
   justify-content: space-evenly;
-  padding-left: 50px;
 }
 /**
  * Nav toggle button
@@ -2043,7 +2039,6 @@ progress[value]::-webkit-progress-bar {
  */
 .l {
   max-width: 80em;
-  margin: 0 auto;
   padding: 1rem;
 }
 

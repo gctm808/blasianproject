@@ -14,9 +14,6 @@
 	align-items: center;
 	z-index: 2;
 	
-	img {
-		padding-left: 5%;
-	}
 }
 
 /**
@@ -26,7 +23,6 @@
 .c-header__controls {
 	display: flex;
 	justify-content: space-evenly;
-	padding-left: 50px;
 
 	Button {
 	}
