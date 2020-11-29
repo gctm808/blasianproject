@@ -16,9 +16,11 @@
 	box-shadow: 1px 1px 4px $color-gray-4;
 	background: $color-brand-primary-dark;
 	color: $color-gray-1;
+	border-radius: 10px;
 
 	&:hover, &:focus {
 		background: $color-brand-primary;
+		color: $color-text-blue;
 	}
 
 	/**
